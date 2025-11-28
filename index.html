@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cita Rasa Kuliner & Rating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cita Rasa Kuliner Nusantara</h1>
+    <p>Temukan dan beri rating pada makanan favoritmu!</p>
+</header>
+
+<div class="container">
+
+    <!-- Makanan 1 -->
+    <div class="food-card">
+        <h2>🍛 Rendang</h2>
+        <p class="description">Pedas, gurih, dan kaya rempah dengan daging empuk.</p>
+
+        <div class="rating" onclick="beriRating(1)">
+            ★★★★★
+        </div>
+        <p class="rating-value">Rating: <span id="rating-1">5</span>/5</p>
+
+        <div class="opinions" id="opinions-1">
+            <strong>Pendapat Pengguna:</strong>
+            <p>Rendangnya empuk dan sangat berbumbu.</p>
+        </div>
+
+        <textarea id="input-1" placeholder="Tulis pendapatmu..."></textarea>
+        <button onclick="tambahPendapat(1)">Kirim</button>
+    </div>
+
+    <!-- Makanan 2 -->
+    <div class="food-card">
+        <h2>🍜 Soto Ayam</h2>
+        <p class="description">Kuah gurih, segar, dan pas disantap hangat.</p>
+
+        <div class="rating" onclick="beriRating(2)">
+            ★★★★☆
+        </div>
+        <p class="rating-value">Rating: <span id="rating-2">4</span>/5</p>
+
+        <div class="opinions" id="opinions-2">
+            <strong>Pendapat Pengguna:</strong>
+            <p>Segar banget, cocok untuk makan pagi.</p>
+        </div>
+
+        <textarea id="input-2" placeholder="Tulis pendapatmu..."></textarea>
+        <button onclick="tambahPendapat(2)">Kirim</button>
+    </div>
+
+    <!-- Makanan 3 -->
+    <div class="food-card">
+        <h2>🍡 Klepon</h2>
+        <p class="description">Manis, kenyal, dengan gula merah yang lumer.</p>
+
+        <div class="rating" onclick="beriRating(3)">
+            ★★★★★
+        </div>
+        <p class="rating-value">Rating: <span id="rating-3">5</span>/5</p>
+
+        <div class="opinions" id="opinions-3">
+            <strong>Pendapat Pengguna:</strong>
+            <p>Kleponnya lembut dan gula merahnya mantap!</p>
+        </div>
+
+        <textarea id="input-3" placeholder="Tulis pendapatmu..."></textarea>
+        <button onclick="tambahPendapat(3)">Kirim</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
